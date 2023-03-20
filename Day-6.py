@@ -1,5 +1,5 @@
 class customer:
-    def _init_(self,cid,cname,cage,account):
+    def __init__(self,cid,cname,cage,account):
         self.customer_id=cid
         self.customer_name=cname
         self.age=cage
@@ -24,7 +24,7 @@ class customer:
     def get_account(self):
         return self.account
 class account:
-    def _init_(self,account_type,balance,min_balance):
+    def __init__(self,account_type,balance,min_balance):
         self.account_type=account_type
         self.balance=balance
         self.min_balance=min_balance
@@ -37,7 +37,7 @@ class account:
     def set_balance(self,balance):  
         self.balance=balance
 class privilegedcustomer(customer):
-    def _init_(self,cid,cname,cage,account,bonus):
+    def __init__(self,cid,cname,cage,account,bonus):
         self.customer_id=cid
         self.customer_name=cage
         self.age=cage
